@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odisha Train Booking</title>
+    <link rel="stylesheet" href="Train.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+   <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo" style=" background-image: url(bus.webp);">Odishaaah!</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Stations</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <!-- BACKDROUND VIDEO -->
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="video/300377210190352388.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="overlay">
+            <h2>Welcome to Odisha Train Booking</h2>
+            <p style="color: white;">Your journey starts here.</p>
+        </div>
+      </div>
+
+
+
+
+    <!-- BOOK YOUR TRAIN -->
+    <main class="container">
+        <section id="search">
+            <h2>Book Your Train</h2>
+            <form action="Search Trains" method="GET">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <select id="from" name="from" required>
+                        <option value="">Select Station</option>
+                        <option value="Bhubaneswar">Bhubaneswar</option>
+                        <option value="Berhampur">Berhampur</option>
+                        <option value="Cuttack">Cuttack</option>
+                        <option value="Puri">Puri</option>
+                        <option value="Sambalpur">Sambalpur</option>
+                        <!-- Add all other stations -->
+                    </select>
+                </div>
+ 
+
+
+                <div class="form-group">
+                    <label for="to">To:</label>
+                    <select id="to" name="to" required>
+                        <option value="">Select Station</option>
+                        <option value="Bhubaneswar">Bhubaneswar</option>
+                        <option value="Berhampur">Berhampur</option>
+                        <option value="Cuttack">Cuttack</option>
+                        <option value="Puri">Puri</option>
+                        <option value="Sambalpur">Sambalpur</option>
+                        <!-- Add all other stations -->
+                    </select>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <button type="submit">Search Trains</button>
+            </form>
+        </section>
+        
+
+
+        <section id="featured-stations">
+            <h2>Featured Stations</h2>
+            <div class="stations-list">
+                <div class="station">Bhubaneswar</div>
+                <div class="station">Cuttack</div>
+                <div class="station">Puri</div>
+                <div class="station">Sambalpur</div>
+                <!-- Add more stations as needed -->
+            </div>
+        </section>
+    </main>
+
+
+    
+
+
+
+
+
+
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>
