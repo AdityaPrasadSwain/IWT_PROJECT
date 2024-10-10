@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-User Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <!-- User Type Selection -->
+        <form id="loginForm" method="POST" action="login_process.php">
+            <div class="user-type">
+                <label for="userType">Select User Type:</label>
+                <select id="userType" name="userType" required>
+                    <option value="" disabled selected>Select user type</option>
+                    <option value="admin">Admin</option>
+                    <option value="travelAgency">Travel Agency</option>
+                    <option value="user">User</option>
+                </select>
+            </div>
+
+            <!-- Common Fields -->
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <!-- Admin-Specific Fields -->
+            <div id="adminFields" class="extra-fields" style="display: none;">
+                <div class="input-group">
+                    <label for="adminCode">Admin Code:</label>
+                    <input type="text" id="adminCode" name="adminCode">
+                </div>
+            </div>
+
+            <!-- Travel Agency-Specific Fields -->
+            <div id="agencyFields" class="extra-fields" style="display: none;">
+                <div class="input-group">
+                    <label for="agencyName">Agency Name:</label>
+                    <input type="text" id="agencyName" name="agencyName">
+                </div>
+                <div class="input-group">
+                    <label for="agencyLicense">Agency License Number:</label>
+                    <input type="text" id="agencyLicense" name="agencyLicense">
+                </div>
+            </div>
+
+            <!-- User-Specific Fields -->
+            <div id="userFields" class="extra-fields" style="display: none;">
+                <div class="input-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber">
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
