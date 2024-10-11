@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,14 +22,10 @@
                 </select>
             </div>
 
-            <!-- Common Fields -->
-            <div class="input-group">
+            <!-- Username Field (Only for Regular User) -->
+            <div id="usernameField" class="input-group" style="display: none;">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="text" id="username" name="username">
             </div>
 
             <!-- Admin-Specific Fields -->
@@ -43,21 +39,15 @@
             <!-- Travel Agency-Specific Fields -->
             <div id="agencyFields" class="extra-fields" style="display: none;">
                 <div class="input-group">
-                    <label for="agencyName">Agency Name:</label>
-                    <input type="text" id="agencyName" name="agencyName">
-                </div>
-                <div class="input-group">
-                    <label for="agencyLicense">Agency License Number:</label>
-                    <input type="text" id="agencyLicense" name="agencyLicense">
+                    <label for="agencyID">Agency ID:</label>
+                    <input type="text" id="agencyID" name="agencyID">
                 </div>
             </div>
 
-            <!-- User-Specific Fields -->
-            <div id="userFields" class="extra-fields" style="display: none;">
-                <div class="input-group">
-                    <label for="phoneNumber">Phone Number:</label>
-                    <input type="text" id="phoneNumber" name="phoneNumber">
-                </div>
+            <!-- Password Field (Common for All) -->
+            <div id="passwordField" class="input-group" style="display: none;">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
             </div>
 
             <!-- Submit Button -->
