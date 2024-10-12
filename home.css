@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Assets/lake.jpg);
+    background-size: cover;
+    background-position: center;
+ } 
+
+
+                                                /* navbar style start */
+
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    
+ }
+.logo{
+    width: 140px;
+    cursor: pointer;
+ }
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+    
+ }
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+ }
+
+.nav-links a:hover {
+    border-bottom: 2px solid purple;
+}  
+
+.register-btn{
+    background: black;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+ }
+                                                 /* navbar style end */
+
+                                                 /* hero section start */
+
+
+ .container{
+    padding: 0 7px;
+    align-items: center; 
+ }
+
+ .header h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-top: 40px;  
+ }
+
+ .header p{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+ }
+
+ .button{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+     margin-left: 40%;
+     margin-top: 5%;
+}
+
+.button:hover {
+    background-color: palegoldenrod;
+    color: black;
+     
+  
+}
+
+
+                                                    /* herosection style end  */
+
+                                                /* Destination section style starts */
+
+.destinations-section {
+   padding: 60px 20px;
+   text-align: center;
+   background-color: whitesmoke;
+}
+
+ .destinations-section h2 {
+   font-size: 2.5rem;
+   margin-bottom: 40px;
+}
+
+.destinations-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 30px;
+
+}
+
+.destination-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.1);
+}
+
+.destination-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.destination-content p{
+    color: hotpink;
+}
+
+.destination-card:hover .destination-content {
+    opacity: 1;
+}
+
+.learn-more-btn {
+    color: #74ebd5;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.learn-more-btn:hover {
+    text-decoration: underline;
+} 
+                                               
