@@ -42,7 +42,7 @@ font-family: "Questrial", sans-serif;
 } 
 
 
-/* From Uiverse.io by mrhyddenn */
+/* From Uiverse.io by mrhyddenn */  
 .shadow__btn { 
   padding: 10px 20px; 
   border: none; 
@@ -66,15 +66,41 @@ font-family: "Questrial", sans-serif;
   box-shadow: 0 0 5px rgb(0,140,255), 
               0 0 25px rgb(0,140,255), 
               0 0 50px rgb(0,140,255), 
-              0 0 100px rgb(0,140,255);
+              0 0 100px rgb(0,140,255); 
 } 
-.bus_details{ 
+ 
+
+
+
+
+.bus_details1{ 
 width: 80%; 
 height: 40%; 
 /* border: 1px solid black; */ 
 margin-bottom: 5%; 
-margin-top: 12%; 
-/* border-radius:60px; */ 
+margin-top: 1%; 
+border-radius:60px; 
+margin-left: 10%; 
+
+} 
+.bus_details2{ 
+width: 80%; 
+height: 40%; 
+/* border: 1px solid black; */ 
+margin-bottom: 5%; 
+margin-top: 17%; 
+border-radius:60px; 
+margin-left: 10%; 
+
+} 
+
+.bus_details3{ 
+width: 80%; 
+height: 40%; 
+/* border: 1px solid black; */ 
+margin-bottom: 5%; 
+margin-top: 17%; 
+border-radius:60px; 
 margin-left: 10%; 
 
 } 
@@ -106,6 +132,10 @@ font-weight: weight;
 font-style: normal; 
 font-variation-settings:"wdth" 100; 
 } 
+
+
+
+
 /* From Uiverse.io by doniaskima */  
 .btn-12, 
 .btn-12 *, 
@@ -176,24 +206,25 @@ background: linear-gradient(
   #fff 75%, 
   transparent 0 
 ); 
-content: ""; 
+content: "";
 inset: 0; 
-position: absolute; 
-transform: translateY(var(--progress, 100%)); 
-transition: transform 0.2s ease; 
+  position: absolute; 
+  transform: translateY(var(--progress, 100%)); 
+  transition: transform 0.2s ease; 
 } 
-
+ 
 .btn-12:after { 
---progress: -100%; 
-background: linear-gradient( 
-  90deg, 
-  transparent 0, 
-  transparent 25%, 
-  #fff 0, 
-  #fff 50%, 
-  transparent 0, 
-  transparent 75%,
-  #fff 0);
+  --progress: -100%; 
+  background: linear-gradient( 
+    90deg, 
+    transparent 0, 
+    transparent 25%, 
+    #fff 0, 
+    #fff 50%, 
+    transparent 0, 
+    transparent 75%, 
+    #fff 0 
+  ); 
   z-index: -1; 
 } 
  
@@ -206,6 +237,7 @@ background: linear-gradient(
  
 #shedow{ 
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; 
+ 
 } 
  
  
@@ -215,15 +247,22 @@ background: linear-gradient(
 .seats{ 
   height: 60%; 
   width: 80%; 
-  border: 1px solid black; 
+  /* border: 1px solid black; */ 
   margin-top: 20%; 
   margin-left: 10%; 
   margin-bottom: 10%; 
+  border-radius: 20px; 
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; 
+  background-color: #bde0fe; 
 } 
 .icon{ 
   height: 87.5%; 
   width: 100%; 
-  border: 1px solid white; 
+  /* border: 1px solid black; */ 
+  /* margin-top: 10%; */ 
+  margin-left: 8%; 
+  position: relative; 
+   
 } 
 .click{ 
   height: 17%; 
@@ -232,12 +271,27 @@ background: linear-gradient(
   margin-top: 10px; 
   margin-left: 10px; 
   font-size: 30px; 
+  background: none; 
+   
+} 
+.click1{ 
+  height: 17%; 
+  width: 9%; 
+  border-radius: 10px; 
+  margin-top: 10px; 
+  margin-left: 10px; 
+  color: #bde0fe; 
+  border: none; 
+  font-size: 30px; 
+  background: none; 
+   
 } 
 .foot{ 
   width: 100%; 
   height: 30%; 
   border: 1px solid black; 
 } 
+ 
  
  
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"); 
@@ -284,6 +338,7 @@ background: linear-gradient(
 } 
 .social-icon__link:hover { 
   transform: translateY(-10px); 
+  color: #ff69eb; 
 } 
  
 .menu__link { 
