@@ -1,78 +1,149 @@
-.container{ 
-  height: 100%; 
+.home_back{ 
+  height: 100vh; 
   width: 100%; 
-  background-image: url(img/bus11.png); 
+  background-image: url(https://content.jdmagicbox.com/comp/def_content/bus_on_hire/default-bus-on-hire-6.jpg); 
   background-repeat: no-repeat; 
-  background-attachment: fixed; 
   background-size: cover; 
-} 
-.box{ 
-  height: 40%; 
-  width: 70%; 
-  /* border: 1px solid black; */ 
-  /* margin-left: 10%; 
-  margin-bottom: -10%; */    
-  background-color: rgba(34,34,59, 0.5); 
-  border-radius: 20px; 
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+}
+.menu-box{ 
+  width: 600px; 
+  height: 400px; 
+  background-color: rgba(169, 222, 249,0.5); 
+  border-radius: 12px; 
+  float: right; 
+  text-align: center; 
   position: absolute; 
   top:50%; 
   left: 50%; 
   transform: translate(-50%,-50%); 
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; 
 } 
-h1{ 
-color: #a7c957; 
-margin-bottom: -10%; 
-font-family: "Questrial", sans-serif; 
+.btn-box{ 
+  width: 45%; 
+  height: 25px; 
+  background-color: darkblue; 
+  color: white; 
+  font-size: 14px; 
+  border-radius: 10px; 
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px; 
 } 
-.input-style { 
-  padding: 10px; 
-  border: 2px solid #ccc; 
-  border-radius: 5px; 
-  font-size: 16px; 
-  color: #555; 
-  outline: none; 
-  margin-left: 5%; 
-  margin-top: 5%; 
+.nav{  
+  width:inherit; 
+  height:60px; 
+} 
+.mid-left img{ 
+  width:20%; 
+  height:60px; 
+  float:left;    
+} 
+.mid-right img{ 
+ 
+width:20%; 
+  height:60px; 
+  float:right; 
+ 
 } 
  
-.input-style:focus { 
-  border-color: #007bff; 
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+.mid-center{ 
+   
+  width:80%; 
+  height:60px; 
+  margin-left: 10%; 
+  /* background-color: aqua; */ 
 } 
-
-
-/* From Uiverse.io by mrhyddenn */  
-.shadow__btn { 
-  padding: 10px 20px; 
+.book{ 
+   
+  font-size:30px; 
+  border-radius: 10px; 
+  color: aqua; 
+  background:none; 
+  margin-top: 8px; 
   border: none; 
-  font-size: 17px; 
+} 
+ 
+   
+.low-navbar{ 
+   
+  width:inherit; 
+  height:160px; 
+   
+} 
+#arrow{ 
+  width: 35px; 
+  border: none; 
+  cursor: pointer; 
+  background: none; 
+} 
+#text{ 
+   
+  width:20vw; 
+  height:25px; 
+  font-size: 10px; 
+  text-align: left; 
+} 
+#input1{ 
+  width:90%; 
+  height:20px; 
+  border:2px solid darkblue; 
+  PADDING:15PX 10PX; 
+  border-radius:5px; 
+  font-size: 15px; 
+}  
+#input2{ 
+  width:90%; 
+  height:20px; 
+  border:2px solid darkblue; 
+  PADDING:15PX 10PX; 
+  border-radius:5px; 
+  font-size: 15px; 
+}  
+#right_feild{ 
+  width:120%; 
+  height:20px; 
+  border:2px solid darkblue; 
+  border-radius:5px; 
+  PADDING:15PX 10PX; 
+} 
+ 
+ 
+ 
+/* From Uiverse.io by niat786 */  
+.muna { 
+  border: none; 
   color: #fff; 
-  border-radius: 7px; 
-  letter-spacing: 4px; 
-  font-weight: 700; 
-  text-transform: uppercase; 
-  transition: 0.5s; 
-  transition-property: box-shadow; 
-  margin-left: 6%; 
-} 
- 
-.shadow__btn { 
-  background: rgb(0,140,255); 
-  box-shadow: 0 0 25px rgb(0,140,255); 
-} 
- 
-.shadow__btn:hover { 
-  box-shadow: 0 0 5px rgb(0,140,255), 
-              0 0 25px rgb(0,140,255), 
-              0 0 50px rgb(0,140,255), 
-              0 0 100px rgb(0,140,255); 
-} 
- 
-
-
-
-
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7); 
+  border-radius: 20px; 
+  background-size: 100% auto; 
+  font-family: inherit; 
+  font-size: 17px; 
+  padding: 0.6em 1.5em; 
+  margin-left: -30%; 
+  margin-top: 30px; 
+ } 
+  
+ .muna:hover { 
+  background-position: right center; 
+  background-size: 200% auto; 
+  -webkit-animation: pulse 2s infinite; 
+  animation: pulse512 1.5s infinite; 
+ } 
+  
+ @keyframes pulse512 { 
+  0% { 
+   box-shadow: 0 0 0 0 #05bada66; 
+  } 
+  
+  70% { 
+   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%); 
+  } 
+  
+  100% { 
+   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%); 
+  } 
+ } 
+input{ 
+  padding:5px; 
+}
 .bus_details1{ 
 width: 80%; 
 height: 40%; 
@@ -149,7 +220,7 @@ box-sizing: border-box;
 
 .btn-12 { 
 -webkit-tap-highlight-color: transparent; 
--webkit-appearance: button; 
+/*-webkit-appearance: button; */
 background-color: #000; 
 background-image: none; 
 color: #fff; 
@@ -161,7 +232,7 @@ font-size: 100%;
 font-weight: 900; 
 line-height: 1.5; 
 margin: 0; 
--webkit-mask-image: -webkit-radial-gradient(#000, #fff); 
+/*-webkit-mask-image: -webkit-radial-gradient(#000, #fff);*/
 padding: 0; 
 text-transform: uppercase; 
 } 
@@ -176,7 +247,7 @@ outline: auto;
 
 .btn-12 svg { 
 display: block; 
-vertical-align: middle; 
+/*vertical-align: middle;*/
 } 
 
 .btn-12 [hidden] { 
@@ -331,7 +402,7 @@ inset: 0;
  
 .social-icon__link { 
   font-size: 2rem; 
-  color: #fff; 
+  color:#fff;
   margin: 0 10px; 
   display: inline-block; 
   transition: 0.5s; 

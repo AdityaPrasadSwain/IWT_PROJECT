@@ -41,39 +41,84 @@
         <article> 
           <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0"> 
             <section id="scrollspyHeading1"> 
-    <div class="container"> 
-      
-        <div class="box"> 
-           <center><h1 style="color: chartreuse;">BUS BOOK</h1></center> 
-                  
-   <center><select class="input-style"> 
-    
-    <option value="">select starting day</option> 
-    <option value="">select starting day</option> 
-    <option value="">select your start</option> 
-    <option value="">select your start</option> 
-    <option value="">select your start</option> 
-    <option value="">select your start</option> 
-    </select> 
- 
-    <select class="input-style"> 
-    <option value="">select ending day</option> 
-    <option value="">select your start</option> 
-    <option value="">select your start</option> 
-    <option value="">select your start</option> 
-    <option value="">select your start</option> 
-    <option value="">select your start</option> 
-    </select> 
- 
-<input placeholder="Travel date" class="input-style" type="date"><br><br><br> 
-</center>  
-<center><a href="#scrollspyHeading2"> 
-<button class="shadow__btn"> 
-    search 
-</button></a></center>  
- 
+    <div class="home_back">
+      <div class="menu-box">            
+        <button class="btn-box"><i class="fa-solid fa-clipboard-check" style="color: #ffffff;"></i> PNR Status</button> 
+        <button  class="btn-box"><i class="fa-solid fa-clipboard-list" style="color: #ffffff;"></i> Charts/ Vacancy</button>             
+        <div class="nav">             
+            <div class="mid-center"> 
+                <button class="book">BOOK TICKET</button>             
+            </div>            
     </div> 
-    </div> 
+        <div class="low-navbar"> 
+            <table style="padding: 20px;">                   
+                <!---first row-----------------------------> 
+                <tr>                       
+                    <td style="width:60%;"> 
+                      <i class="fa-solid fa-location-arrow"></i> 
+                       <input type="text" id="input1" placeholder="FROM"> 
+                                </td>                            
+                        <td>                                
+                    <input type="date" id="right_feild" placeholder="DATE">                        
+                    </td> 
+                        </tr>                         
+            <!---second row------------------------------>                 
+            <tr style="text-align: center;"> 
+                <td><button id="arrow" onclick="swapValues()"><i class="fa-solid fa-arrows-up-down"></i></button></td>
+            </tr>                
+                <!------third row-------------------------> 
+                <tr> 
+                    <td><i class="fa-solid fa-location-dot"></i> 
+                    <input type="text" id="input2" 
+                        placeholder="TO"> 
+                    </td> 
+                     <td>                        
+                        <select id="right_feild"> 
+                            <option>select</option> 
+                                                       
+                        </select>                 
+                    </td>                    
+                </tr>                
+                <!---------------fourth row--------------------> 
+                <tr>                        
+                    <td>                       
+                    </td>                        
+                </tr> 
+                <tr>                    
+                    <td><br> 
+                      <i class="fa-solid fa-dice-four"></i>                       
+                        <select id="input1"> 
+                            <option>select</option> 
+                            <option>GENERAL</option> 
+                            <option>LADIES</option> 
+                            <option>LOWER BERITH/SR.CITIZEN</option> 
+                            <option>PERSON WITH DISABILITY</option> 
+                            <option>TATKAL</option> 
+                            <option>PREMIUM TATKAL</option>                               
+                        </select>                    
+                        </td> 
+                </tr>                 
+                <!-------------fifth row-----------------> 
+                <tr class=""> 
+                    <td > <br>   
+                    <input type="checkbox">Person With Disability Concession<br> 
+                  <input type="checkbox">Flexible With Date<br> 
+                        </td> 
+                    <td> 
+                    <input type="checkbox">One way<br> 
+                    <input type="checkbox">Round Trip<br> 
+                    </td>                    
+                </tr> 
+                <tr> 
+                    <td><br>                   
+                   </td> 
+                    <td>                          
+                <button class="muna"> Search</button>                        
+                    </td>                    
+                </tr>                                
+            </table>            
+        </div><br><br>                
+        </div>
 </section> 
 <!----------- 
       selest bus 
@@ -89,7 +134,7 @@
         
             <div class="card-group" id="shedow"> 
                 <div class="card"> 
-                  <img src="img/bus11.png" class="card-img-top" alt="..."> 
+                  <img src="image/img01.jpg" class="card-img-top" alt="..."> 
                   <div class="card-body"> 
                     <h5 class="card-title">Odisha Tour and Travel</h5> 
                     <p class="card-text">VOLVO A/C Slepper<br>20:33 .....33hrs 25mins..... 05.55</p> 
@@ -101,7 +146,7 @@
                   </div> 
                 </div> 
                 <div class="card"> 
-                  <img src="img/bus11.png" class="card-img-top" alt="..."> 
+                  <img src="image/img2.jpg" class="card-img-top" alt="..."> 
                   <div class="card-body"> 
                     <h5 class="card-title">Odisha Tour and Travel</h5> 
                     <p class="card-text">VOLVO A/C Slepper<br>20:33 .....33hrs 25mins..... 05.55</p> 
@@ -112,7 +157,7 @@
                   </div> 
                 </div> 
                 <div class="card"> 
-                  <img src="img/bus11.png" class="card-img-top" alt="..."> 
+                  <img src="image/img3.jpg" class="card-img-top" alt="..."> 
                   <div class="card-body"> 
                     <h5 class="card-title">Odisha Tour and Travel</h5> 
                     <p class="card-text">VOLVO A/C Slepper<br>20:33 .....33hrs 25mins..... 05.55</p> 
@@ -136,7 +181,7 @@
     <div class="bus_details2"> 
         <div class="card-group" id="shedow"> 
             <div class="card"> 
-              <img src="img/bus11.png" class="card-img-top" alt="..."> 
+              <img src="image/img4.webp" class="card-img-top" alt="..."> 
               <div class="card-body"> 
                 <h5 class="card-title">Odisha Tour and Travel</h5> 
                 <p class="card-text">VOLVO A/C Slepper<br>20:33 .....33hrs 25mins..... 05.55</p> 
@@ -147,7 +192,7 @@
               </div> 
             </div> 
             <div class="card"> 
-              <img src="img/bus11.png" class="card-img-top" alt="..."> 
+              <img src="image/img5.jpg" class="card-img-top" alt="..."> 
               <div class="card-body"> 
                 <h5 class="card-title">Odisha Tour and Travel</h5> 
                     <p class="card-text">VOLVO A/C Slepper<br>20:33 .....33hrs 25mins..... 05.55</p> 
@@ -158,7 +203,7 @@
               </div> 
             </div> 
             <div class="card"> 
-              <img src="img/bus11.png" class="card-img-top" alt="..."> 
+              <img src="image/img01.jpg" class="card-img-top" alt="..."> 
               <div class="card-body"> 
                 <h5 class="card-title">Odisha Tour and Travel</h5> 
                 <p class="card-text">VOLVO A/C Slepper<br>20:33 .....33hrs 25mins..... 05.55</p> 
@@ -175,7 +220,7 @@
 <div class="bus_details3"> 
     <div class="card-group" id="shedow"> 
         <div class="card"> 
-          <img src="img/bus11.png" class="card-img-top" alt="..."> 
+          <img src="image/img3.jpg" class="card-img-top" alt="..."> 
           <div class="card-body"> 
             <h5 class="card-title">Odisha Tour and Travel</h5> 
                 <p class="card-text">VOLVO A/C Slepper<br>20:33 .....33hrs 25mins..... 05.55</p> 
@@ -186,7 +231,7 @@
           </div> 
         </div> 
         <div class="card"> 
-          <img src="img/bus11.png" class="card-img-top" alt="..."> 
+          <img src="image/img5.jpg" class="card-img-top" alt="..."> 
           <div class="card-body"> 
             <h5 class="card-title">Odisha Tour and Travel</h5> 
                 <p class="card-text">VOLVO A/C Slepper<br>20:33 .....33hrs 25mins..... 05.55</p> 
@@ -197,7 +242,7 @@
           </div> 
         </div> 
         <div class="card"> 
-          <img src="img/bus11.png" class="card-img-top" alt="..."> 
+          <img src="image/img2.jpg" class="card-img-top" alt="..."> 
           <div class="card-body"> 
             <h5 class="card-title">Odisha Tour and Travel</h5> 
                 <p class="card-text">VOLVO A/C Slepper<br>20:33 .....33hrs 25mins..... 05.55</p> 
@@ -275,6 +320,7 @@
 </div> 
 </section> 
 </div> 
+</div>
 </article> 
 </main> 
 <!--main body start----------------------------------------------------------------------------------------> 
@@ -315,5 +361,6 @@
 </div> 
 </footer> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+<a><button>book now</button></a>
 </body> 
 </html>
