@@ -1,0 +1,331 @@
+<html> 
+<head>   
+    <title>trip to odisha</title> 
+    <link rel="stylesheet" href="bus.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons-core.min.css" integrity="sha512-OmevVDECSDeo7M4G+Nvh0+VLVGS2XnEOkXWJcJ0TRom3GpGgc/ryQIgpRZw20mb5eR2U0sqsm33MaR8yD1zdsQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head> 
+<body> 
+ 
+   <!--header start----------------------------------------------------------------------------------------> 
+ <script src="bus.js"></script>
+   <nav id="navbar-example2" class="navbar navbar-light bg-light px-3"> 
+    <div class="button-container"> 
+    <a class="navbar-brand" style="font-size: 30px;color: #03045e;">Book Bus</a> 
+     
+    <ul class="nav"> 
+      <li class="nav-item"> 
+        <a class="nav-link" href="#scrollspyHeading1"><button class="button">HOME</button></a> 
+      </li> 
+      <li class="nav-item"> 
+        <a class="nav-link" href="#scrollspyHeading2"><button class="button">BUS</button></a> 
+      </li> 
+      <li class="nav-item"> 
+        <a class="nav-link" href="#scrollspyHeading3"><button class="button">SEATS</button></a> 
+      </li> 
+      <li class="nav-item"> 
+        <a class="nav-link" href="#scrollspyHeading4"><button class="button">CONTACT</button></a> 
+      </li> 
+       
+    </ul> 
+  </div> 
+  </nav> 
+      <!--header end----------------------------------------------------------------------------------------> 
+ 
+      <!--main body start----------------------------------------------------------------------------------------> 
+ 
+      <!----------- 
+      #home 
+      ----------> 
+    <main> 
+        <article> 
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0"> 
+            <section id="scrollspyHeading1"> 
+    <div class="home_back">
+      <div class="menu-box">            
+        <button class="btn-box"><i class="fa-solid fa-clipboard-check" style="color: #ffffff;"></i> PNR Status</button> 
+        <button  class="btn-box"><i class="fa-solid fa-clipboard-list" style="color: #ffffff;"></i> Charts/ Vacancy</button>             
+        <div class="nav">             
+            <div class="mid-center"> 
+                <button class="book">BOOK TICKET</button>             
+            </div>            
+    </div> 
+        <div class="low-navbar"> 
+            <table style="padding: 20px;">                   
+                <!---first row-----------------------------> 
+                <tr>                       
+                    <td style="width:60%;"> 
+                      <i class="fa-solid fa-location-arrow"></i> 
+                       <input type="text" id="input1" placeholder="FROM"> 
+                                </td>                            
+                        <td>                                
+                    <input type="date" id="right_feild" placeholder="DATE">                        
+                    </td> 
+                        </tr>                         
+            <!---second row------------------------------>                 
+            <tr style="text-align: center;"> 
+                <td><button id="arrow" onclick="swapValues()"><i class="fa-solid fa-arrows-up-down"></i></button></td>
+            </tr>                
+                <!------third row-------------------------> 
+                <tr> 
+                    <td><i class="fa-solid fa-location-dot"></i> 
+                    <input type="text" id="input2" 
+                        placeholder="TO"> 
+                    </td> 
+                     <td>                        
+                        <select id="right_feild"> 
+                            <option>select</option> 
+                                                       
+                        </select>                 
+                    </td>                    
+                </tr>                
+                <!---------------fourth row--------------------> 
+                <tr>                        
+                    <td>                       
+                    </td>                        
+                </tr> 
+                <tr>                    
+                    <td><br> 
+                      <i class="fa-solid fa-dice-four"></i>                       
+                        <select id="input1"> 
+                            <option>select</option> 
+                            <option>GENERAL</option> 
+                            <option>LADIES</option> 
+                            <option>LOWER BERITH/SR.CITIZEN</option> 
+                            <option>PERSON WITH DISABILITY</option> 
+                            <option>TATKAL</option> 
+                            <option>PREMIUM TATKAL</option>                               
+                        </select>                    
+                        </td> 
+                </tr>                 
+                <!-------------fifth row-----------------> 
+                <tr class=""> 
+                    <td > <br>                     
+                    <input type="checkbox">One Way<br>
+                        </td> 
+                    <td> 
+                    <input type="checkbox">Round Trip<br> 
+                     
+                    </td>                    
+                </tr> 
+                <tr> 
+                    <td><br>                   
+                   </td> 
+                    <td>                          
+                <a href="#scrollspyHeading2"><button class="muna"> Search</button> </a>                       
+                    </td>                    
+                </tr>                                
+            </table>            
+        </div><br><br>                
+        </div>
+</section> 
+<!----------- 
+      selest bus 
+      ----------> 
+ 
+ 
+<section id="scrollspyHeading2"> 
+    <center><h1 class="h1">Selest Your Bus</h1></center>
+    <main class="page-content"> 
+      <div class="photo"> 
+          <div class="content"> 
+              <h2 class="title">Mountain View</h2> 
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p><button class="btn5">View Trips</button></div> 
+      </div> 
+      <div class="photo"> 
+          <div class="content"> 
+              <h2 class="title">To The Beach</h2> 
+              <p class="copy">Plan your next beach trip with these fabulous destinations</p><button class="btn5">View Trips</button></div> 
+      </div> 
+      <div class="photo"> 
+          <div class="content"> 
+              <h2 class="title">Desert Destinations</h2> 
+              <p class="copy">It's the desert you've always dreamed of</p><button class="btn5">Book Now</button></div> 
+      </div> 
+      <div class="photo"> 
+          <div class="content"> 
+              <h2 class="title">Explore The Galaxy</h2> 
+              <p class="copy">Seriously, straight up, just blast off into outer space today</p><button class="btn5">Book Now</button></div> 
+      </div> 
+      <div class="photo"> 
+          <div class="content"> 
+              <h2 class="title">Mountain View</h2> 
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p><button class="btn5">View Trips</button></div> 
+      </div> 
+      <div class="photo"> 
+          <div class="content"> 
+              <h2 class="title">Mountain View</h2> 
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p><button class="btn5">View Trips</button></div> 
+      </div> 
+      <div class="photo"> 
+          <div class="content"> 
+              <h2 class="title">Mountain View</h2> 
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p><button class="btn5">View Trips</button></div> 
+      </div> 
+      <div class="photo"> 
+          <div class="content"> 
+              <h2 class="title">Mountain View</h2> 
+              <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p><button class="btn5">View Trips</button></div> 
+      </div> 
+  </main>
+</section> 
+<!----------- 
+  select seats 
+  ----------> 
+<section id="scrollspyHeading3"> 
+
+<div class="seats"> 
+  <center><h1>Select Seats</h1></center> 
+  <div class="icon"> 
+    <!-- <div class="driv"> 
+      <img src="//jsak.mmtcdn.com/bus_cdn_dt/static/media/steering-wheel.76ed628a.svg"> 
+    </div> --> 
+    <button class="click">1</button> 
+    <button class="click">5</button> 
+    <button class="click">9</button> 
+    <button class="click">13</button> 
+    <button class="click">17</button> 
+    <button class="click">21</button> 
+    <button class="click">25</button> 
+    <button class="click">29</button> 
+    <button class="click">33</button> 
+    <button class="click">2</button> 
+    <button class="click">6</button> 
+    <button class="click">10</button> 
+    <button class="click">14</button> 
+    <button class="click">18</button> 
+    <button class="click">22</button> 
+    <button class="click">26</button> 
+    <button class="click">30</button> 
+    <button class="click">34</button> 
+    <button class="click1">19</button> 
+    <button class="click1">20</button> 
+    <button class="click1">21</button> 
+    <button class="click1">22</button> 
+    <button class="click1">23</button> 
+    <button class="click1">24</button> 
+    <button class="click1">25</button> 
+    <button class="click1">26</button> 
+    <button class="click">35</button> 
+    <button class="click">3</button> 
+    <button class="click">7</button> 
+    <button class="click">11</button> 
+    <button class="click">15</button> 
+    <button class="click">19</button> 
+    <button class="click">23</button> 
+    <button class="click">27</button> 
+    <button class="click">31</button> 
+    <button class="click">36</button> 
+    <button class="click">4</button> 
+    <button class="click">8</button> 
+    <button class="click">12</button> 
+    <button class="click">16</button> 
+    <button class="click">20</button> 
+    <button class="click">24</button> 
+    <button class="click">28</button> 
+    <button class="click">32</button> 
+    <button class="click">37</button> 
+  </div>
+  <center><a href="book form/registrationform.html"><button class="muna" id="puja">book now</button></a></center>
+</div> 
+</section> 
+<section id="scrollspyHeading4">
+  <div class="contact-form-container"> 
+    <div class="contact-us"> 
+      <div class="contact-header"> 
+        <h1>&#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;CONTACT US</h1> 
+      </div> 
+      <div class="social-bar"> 
+        <ul> 
+          <li> 
+            <i class="fab fa-facebook-f"></i>
+          </li> 
+          <li> 
+            <i class="fab fa-twitter"></i> 
+          </li> 
+          <li> 
+            <i class="fab fa-instagram"></i> 
+          </li> 
+          <li> 
+            <i class="fab fa-dribbble"></i> 
+          </li> 
+        </ul> 
+      </div> 
+    </div> 
+    <div class="header"> 
+      <h1>Let's Get Started</h1> 
+      <!-- <h2>Contact us to start your next project!</h2>  -->
+    </div> 
+    <div class="address"> 
+      <i class="fas fa-map-marker-alt"></i> 
+      <h3>8266 Gygax</h3> 
+      <h3>Norfolk, VA</h3> 
+    </div> 
+    <div class="phone"> 
+      <i class="fas fa-phone-alt"></i> 
+      <h3>757 287 1608</h3> 
+    </div> 
+    <div class="email"> 
+      <i class="fas fa-envelope"></i> 
+      <h3>hello@adept.com</h3> 
+    </div> 
+    <div class="contact-form"> 
+      <form> 
+        <input type="text" placeholder="Name"> 
+        <input type="email" placeholder="Email"> 
+        <textarea rows="4" placeholder="Send message..."></textarea> 
+        <button type="button">SEND</button> 
+      </form> 
+    </div> 
+  </div>
+  
+</section>
+</div>
+</article> 
+</main> 
+<!--main body start----------------------------------------------------------------------------------------> 
+<footer> 
+<div class="foot"> 
+<footer class="footer"> 
+  <div class="waves"> 
+    <div class="wave" id="wave1"></div> 
+    <div class="wave" id="wave2"></div> 
+    <div class="wave" id="wave3"></div> 
+    <div class="wave" id="wave4"></div> 
+  </div> 
+  <ul class="social-icon"> 
+    <li class="social-icon_item"><a class="social-icon_link" href="#"> 
+        <ion-icon name="logo-facebook"></ion-icon> 
+      </a></li> 
+    <li class="social-icon_item"><a class="social-icon_link" href="#"> 
+        <ion-icon name="logo-twitter"></ion-icon> 
+      </a></li> 
+    <li class="social-icon_item"><a class="social-icon_link" href="#"> 
+        <ion-icon name="logo-linkedin"></ion-icon> 
+      </a></li> 
+    <li class="social-icon_item"><a class="social-icon_link" href="#"> 
+        <ion-icon name="logo-instagram"></ion-icon> 
+      </a></li> 
+  </ul> 
+  <ul class="menu"> 
+    <li class="menu_item"><a class="menu_link" href="#scrollspyHeading1">HOME</a></li> 
+    <li class="menu_item"><a class="menu_link" href="#scrollspyHeading2">SELECT BUS</a></li> 
+    <li class="menu_item"><a class="menu_link" href="#scrollspyHeading3">SELECT SEATS</a></li> 
+     
+
+  </ul> 
+  <p>&copy;2024 Odisha Tour And Travel | Happy Journey</p> 
+</footer> 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+</div> 
+</footer> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+
+</body> 
+</html>
