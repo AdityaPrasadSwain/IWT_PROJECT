@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('your-homepage-background.jpg'); /* Your homepage background image */
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Overlay styles */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+            backdrop-filter: blur(5px); /* Blurs the background */
+        }
+
+        /* Form styling */
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 350px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 22px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button.submit {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button.submit:hover {
+            background-color: #218838;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .form-footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Login */
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .social-login button {
+            width: 48%;
+            background-color: #0073b1;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-login button.google {
+            background-color: #db4437;
+        }
+
+        .social-login i {
+            margin-right: 8px;
+        }
+
+        /* Radio buttons for User/Travel Agency */
+        .user-type {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* Travel Agency Specific Fields */
+        .travel-agency-fields {
+            display: none; /* Hidden by default */
+            margin-top: 10px;
+        }
+
+        /* Login/Register Forms Hide */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Overlay for Login/Register -->
+    <div class="overlay" id="overlay">
+        <div class="form-container" id="formContainer">
+            <!-- Login Form -->
+            <form id="loginForm" action="/login" method="post">
+                <h2>Login</h2>
+                <label for="username">Email or Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button class="submit" type="submit">Login</button>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#" id="showRegister">Sign up here</a></p>
+                </div>
+            </form>
+
+            <!-- Registration Form -->
+            <form id="registrationForm" action="/register" method="post" class="hidden">
+                <h2>Register</h2>
+                <label for="regUsername">Username:</label>
+                <input type="text" id="regUsername" name="username" required>
+                <label for="regEmail">Email:</label>
+                <input type="email" id="regEmail" name="email" required>
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" name="password" required>
+
+                <!-- User/Travel Agency Selection -->
+                <div class="user-type">
+                    <label>
+                        <input type="radio" name="userType" value="user" required> User
+                    </label>
+                    <label>
+                        <input type="radio" name="userType" value="travelAgency" required> Travel Agency
+                    </label>
+                </div>
+
+                <!-- Additional fields for Travel Agency -->
+                <div class="travel-agency-fields" id="travelAgencyFields">
+                    <label for="agencyName">Agency Name:</label>
+                    <input type="text" id="agencyName" name="agencyName">
+                    <label for="licenseNumber">License Number:</label>
+                    <input type="text" id="licenseNumber" name="licenseNumber">
+                </div>
+
+                <button class="submit" type="submit">Register</button>
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Show login form by default
+        const overlay = document.getElementById('overlay');
+        const loginForm = document.getElementById('loginForm');
+        const registrationForm = document.getElementById('registrationForm');
+        const travelAgencyFields = document.getElementById('travelAgencyFields');
+
+        // Direct show overlay without internal login button
+        window.onload = function() {
+            overlay.style.display = 'flex';
+            loginForm.classList.remove('hidden');
+        };
+
+        // Show registration form
+        document.getElementById('showRegister').addEventListener('click', function(event) {
+            event.preventDefault();
+            loginForm.classList.add('hidden');
+            registrationForm.classList.remove('hidden');
+        });
+
+        // Show login form
+        document.getElementById('showLogin').addEventListener('click', function(event) {
+            event.preventDefault();
+            registrationForm.classList.add('hidden');
+            loginForm.classList.remove('hidden');
+        });
+
+        // Show/hide travel agency fields based on selection
+        document.querySelectorAll('input[name="userType"]').forEach(function(radio) {
+            radio.addEventListener('change', function() {
+                if (this.value === 'travelAgency') {
+                    travelAgencyFields.style.display = 'block'; // Show fields
+                } else {
+                    travelAgencyFields.style.display = 'none'; // Hide fields
+                }
+            });
+        });
+
+        // Close overlay on click outside form (optional)
+        overlay.addEventListener('click', function(event) {
+            if (event.target === overlay) {
+                overlay.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
