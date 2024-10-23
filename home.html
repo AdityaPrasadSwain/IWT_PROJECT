@@ -20,16 +20,17 @@
             <a href="#"><img src="Assets/mayurbg.png" alt="Logo"></a>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Packages</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="profile.html">Profile</a></li>
         </ul>
         <div class="search-box">
             <input type="text" placeholder="Search...">
+            <button type="button">🔍</button>
         </div>
         <div class="auth-buttons">
-            <a href="login.html" class="login">Login</a>
-            <a href="signup.html" class="signup">Sign Up</a>
+            <a href="loginRegister.html" class="login">Login</a>
         </div>
     </nav>
     <div class="hero-content">
@@ -45,14 +46,13 @@
     
 </div>
 
-
-
+<br><br><br>
 
 <section class="offer-section">
     <h2>Exclusive offer</h2>
     <div class="container">
         <div class="vertical-div">
-            <img src="Assets/koraput.jfif" alt="Image" class="image">
+            <img src="Assets/Koraput.jpg" alt="Image" class="image">
         </div>
         <div class="horizontal-div">
             <h3>Discover Koraput: Where Nature Whispers, and Culture Thrives</h3>
@@ -64,11 +64,11 @@
                                             <!-- DESTINATION SECTION -->
 
 <section class="destination-section">
-    <h2>Popular Destinations</h2><br><br>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, saepe culpa ipsa voluptas sit maxime suscipit vero, eligendi maiores veniam cupiditate, ducimus dolor ex dolore repellendus non impedit officiis! Dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere vitae itaque dicta voluptate sequi magnam commodi dolores numquam impedit aspernatur sapiente necessitatibus, enim consequuntur nihil pariatur earum aliquid asperiores.</p>
+    <h2>Popular Destinations</h2>
+    <div class="destinations-container">
     <div class="destination">
       <div class="image-container">
-        <img src="Assets/konark.jfif" alt="Destination 1">
+        <img src="Assets/Konark-Sun-Temple-Ancient.webp" alt="Destination 1">
       </div>
       <div class="details">
         <h3>Destination 1</h3>
@@ -77,12 +77,13 @@
         <div class="ratings">
           <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
         </div>
+        <button class="book-now">Book Now</button>
       </div>
     </div>
   
     <div class="destination">
       <div class="image-container">
-        <img src="Assets/koraput.jfif" alt="Destination 2">
+        <img src="Assets/KORAPUT.webp" alt="Destination 2">
       </div>
       <div class="details">
         <h3>Destination 2</h3>
@@ -91,12 +92,13 @@
         <div class="ratings">
           <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
         </div>
+      <button class="book-now">Book Now </button>
       </div>
     </div>
   
     <div class="destination">
       <div class="image-container">
-        <img src="Assets/chilikalake.jfif" alt="Destination 3">
+        <img src="Assets/FXZMfUJUUAEARt-.jpg" alt="Destination 3">
       </div>
       <div class="details">
         <h3>Destination 3</h3>
@@ -105,8 +107,24 @@
         <div class="ratings">
           <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
         </div>
+        <button class="book-now"> Book Now</button>
       </div>
     </div>
+    <div class="destination">
+        <div class="image-container">
+          <img src="Assets/KORAPUT.webp" alt="Destination 4">
+        </div>
+        <div class="details">
+          <h3>Destination 2</h3>
+          <p>Experience the thrill of adventure and the tranquility of nature.</p>
+          <p class="price">1500</p>
+          <div class="ratings">
+            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        <button class="book-now">Book Now </button>
+        </div>
+      </div>
+  </div>
   </section>
   
 
@@ -150,64 +168,6 @@
     </div>
 </section>
 
-
-
-
-                                        <!-- PACKAGES SECTION START -->
-
-<section>
-<div class="packages-div">
-    <h2>popular packages</h2>
-    <div class="places-container">
-        <div class="place-box">
-          
-            <div class="pkg-image">
-                <img src="Assets/cuttack.jpg" alt="Place 1">
-            </div>
-            <div class="place-info">
-                <h3>Sambalpur</h3>
-                <p>Explore the beauty of Sambalpur, famous for Hirakud Dam and vibrant cultural heritage.</p>
-            </div>
-        </div>
-        
-        <div class="place-box">
-            <div class="pkg-image">
-                <img src="Assets/jagannth temple.jpg" alt="Place 4">
-            </div>
-            <div class="place-info">
-                <h3>Hirakud Dam</h3>
-                <p>One of the longest dams in the world, offering picturesque views and boating experiences.</p>
-            </div>
-            <button class="see-btn"><a href="">See More</a></button>
-        </div>
-        <div class="place-box">
-            <div class="pkg-image">
-                <img src="Assets/jagannth temple.jpg" alt="Place 4">
-            </div>
-            <div class="place-info">
-                <h3>Hirakud Dam</h3>
-                <p>One of the longest dams in the world, offering picturesque views and boating experiences.</p>
-            </div>
-            <button class="see-btn"><a href="">See More</a></button>
-        </div>
-        <div class="place-box">
-            <div class="pkg-image">
-                <img src="Assets/jagannth temple.jpg" alt="Place 4">
-            </div>
-            <div class="place-info">
-                <h3>Hirakud Dam</h3>
-                <p>One of the longest dams in the world, offering picturesque views and boating experiences.</p>
-            </div>
-            <button class="see-btn"><a href="">See More</a></button>
-        </div>
-        
-
-    </div>
-</div>
- 
-</section>
-
-
                                                             <!-- footer section -->
 
 
@@ -246,3 +206,9 @@
     
 </body>
 </html>
+
+
+
+
+
+
